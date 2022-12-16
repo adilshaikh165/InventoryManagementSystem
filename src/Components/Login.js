@@ -32,7 +32,7 @@ const Login = (props) => {
     }
   return (
     <div className='mt-2 my-3'>
-      <h1>Login to use iNoteBook</h1>
+      <h1>Login to use Inventory Management System</h1>
         <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email address</label>

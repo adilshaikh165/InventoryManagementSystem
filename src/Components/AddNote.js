@@ -10,7 +10,7 @@ const AddNote = (props) => {
         e.preventDefault();
         addNote(note.title,note.description,note.tag);
         setNote({title : "",description : "", tag : ""});
-        props.showAlert("Note Added Successfully","success");
+        props.showAlert("Product Added Successfully","success");
     }
     const onChange = (e)=>{
         setNote({...note,[e.target.name] : e.target.value})
@@ -18,7 +18,7 @@ const AddNote = (props) => {
     return (
         <div>
             <div className='my-3'>
-                <h1>Add Notes</h1>
+                <h1>Add Products</h1>
                     <form>
                         <div className="mb-3">
                             <label htmlFor="title" className="form-label">Title</label>
@@ -34,7 +34,7 @@ const AddNote = (props) => {
                             <input type="text" className="form-control" id="tag" name="tag" value={note.tag} onChange={onChange}/>
                         </div>
                         
-                        <button disabled={note.title < 3 || note.description < 5} type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
+                        <button disabled={note.title < 3 || note.description < 5} type="submit" className="btn btn-primary" onClick={handleClick}>Add Product</button>
                     </form>
             </div>
         </div>

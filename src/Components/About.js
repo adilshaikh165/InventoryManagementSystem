@@ -14,12 +14,12 @@ export default function About(props) {
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="headingOne">
                         <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                           <strong>Add Your Notes</strong>
+                           <strong>Add Your Product</strong>
                         </button>
                         </h2>
                         <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            Using this app you can save your personal information,educational information and various other information on our website which you can retrieve later on and use as per your needs
+                            Using this app you can save your Product information on our website which you can retrieve later on and use as per your needs
                         </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export default function About(props) {
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            The iNoteBook website is very compatible with various browsers like chrome,mozilla firefox,Microsoft,yahoo and many more. This website is responsive in every device and work very fluently.
+                            The Inventory Management System website is very compatible with various browsers like chrome,mozilla firefox,Microsoft,yahoo and many more. This website is responsive in every device and work very fluently.
                         </div>
                         </div>
                     </div>

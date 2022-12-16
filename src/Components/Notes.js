@@ -30,11 +30,12 @@ function Notes(props) {
    
   }
 
+  
   const handleClick=(e)=>{
-    console.log("The node is updating...." , {note});
+    console.log("The product is updating...." , {note});
     editNote(note.id,note.etitle,note.edescription,note.etag);
     refClose.current.click();
-    props.showAlert("Note Updated Successfully","success")
+    props.showAlert("Product Updated Successfully","success")
   }
   const onChange = (e)=>{
     setNote({...note,[e.target.name] : e.target.value})
@@ -48,12 +49,12 @@ function Notes(props) {
     <button ref={ref} type="button" className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
       Launch demo modal
     </button>
-
+    
     <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title" id="exampleModalLabel">Edit note</h5>
+            <h5 className="modal-title" id="exampleModalLabel">Edit product</h5>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div className="modal-body">
@@ -76,13 +77,13 @@ function Notes(props) {
           </div>
           <div className="modal-footer">
             <button ref={refClose} type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button disabled={note.etitle < 3 || note.edescription < 5} type="button" className="btn btn-primary" onClick={handleClick}>Update Note</button>
+            <button disabled={note.etitle < 3 || note.edescription < 5} type="button" className="btn btn-primary" onClick={handleClick}>Update Product</button>
           </div>
         </div>
       </div>
     </div>
     <div className="row my-3">
-      <h1>Your Notes</h1>
+      <h1>Your Product</h1>
       <div className="container">
       {notes.length === 0 && "No notes to be displayed"}
       </div>
